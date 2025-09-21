@@ -1,6 +1,6 @@
-# Local secrets
+# .NET Secret Manager
 
-## Initialize .NET local secrets service
+## Initialize .NET Secret Manager
 ```powershell
 dotnet user-secrets init
 ```

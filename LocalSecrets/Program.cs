@@ -8,7 +8,6 @@ var connString = builder.Configuration.GetConnectionString("WeatherStoreContext"
 
 var app = builder.Build();
 
-
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
