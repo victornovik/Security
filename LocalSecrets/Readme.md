@@ -17,5 +17,6 @@ docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=@1q2w3e4r" -p 1433:1433 -v s
 
 ## Setting the connection string to secret manager
 ```powershell
-dotnet user-secrets set "ConnectionStrings:WeatherStoreContext" "Server=localhost; Database=WeatherStore; User Id=sa; Password=@1q2w3e4r; TrustServerCertificate=True"
+$sa_password = "@1q2w3e4r"
+dotnet user-secrets set "ConnectionStrings:WeatherStoreContext" "Server=localhost; Database=WeatherStore; User Id=sa; Password=$sa_password; TrustServerCertificate=True"
 ```
